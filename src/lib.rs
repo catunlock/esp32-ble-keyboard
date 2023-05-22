@@ -5,7 +5,14 @@
 
 extern crate alloc;
 
-pub mod ble;
-pub mod constants;
-pub mod keyboard;
-pub mod keycode;
+mod ble;
+pub use ble::*;
+
+mod constants;
+pub use constants::*;
+
+mod keyboard;
+pub use keyboard::*;
+
+mod keycode;
+pub use keycode::*;
