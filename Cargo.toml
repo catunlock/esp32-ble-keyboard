@@ -17,7 +17,7 @@ opt-level = "z"
 
 [dependencies]
 log = { version = "0.4.17", default-features = false }
-esp-idf-sys = { version = "0.33", default-features = false , features = ["libstart", "alloc_handler"] }
+esp-idf-sys = { version = "0.33", default-features = false , features = ["binstart", "alloc_handler"] }
 esp-idf-hal = { version = "0.41", optional = true, default-features = false, features = ["critical-section", "edge-executor", "embassy-sync"] }
 esp-idf-svc = { version = "0.46", optional = true, default-features = false, features = ["alloc", "embassy-time-driver", "embassy-time-isr-queue"] }
 embedded-svc = { version = "0.25", optional = true, default-features = false }
